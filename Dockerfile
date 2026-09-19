@@ -1,0 +1,5 @@
+ARG PYTHON_VERSION=3.12-slim
+FROM python:${PYTHON_VERSION}
+
+ARG ANTHROPIC_VERSION=0.69.0
+RUN pip install --no-cache-dir anthropic==${ANTHROPIC_VERSION}
